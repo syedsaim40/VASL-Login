@@ -1,0 +1,175 @@
+/* -------------------Login Page Style-------------- */
+.login_page{
+    text-align: center;
+    padding: 100px 50px;
+}
+.content_holder{
+    width: 560px;
+    margin: 0 auto;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    /* box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.75); */
+    padding: 20px 30px;
+    box-shadow: 0px 1px 38px -5px rgba(44,39,39,0.75);
+    -webkit-box-shadow: 0px 1px 38px -5px rgba(44,39,39,0.75);
+    -moz-box-shadow: 0px 1px 38px -5px rgba(44,39,39,0.75);
+    border-radius: 10px;
+}
+
+.content_holder .group_field{
+    overflow: hidden;
+}
+.content_holder .group_field label{
+    margin-bottom: 10px;
+    display: block;
+    text-align: left;
+}
+.content_holder .group_field label span{
+    color: red;
+}
+.content_holder .group_field input{
+    margin-bottom: 10px;
+    width: 100%;
+    height: 50px;
+    float: left;
+    border: 1px solid transparent;
+    box-shadow: none;
+    outline: none;
+    text-shadow: none;
+    padding: 5px 5px 5px 0px;
+    border-bottom-color: #444;
+}
+.content_holder .group_field input:focus,
+.content_holder .group_field input:hover{
+    background: #eee;
+    border-bottom:1px solid #444 ;
+}
+.content_holder .group_field.e_btn{
+    padding-top: 20px;
+}
+.content_holder .group_field button{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #444;
+    text-transform: uppercase;
+    color: #fff;
+    transition: all ease-in-out 0.3s;
+}
+.content_holder .group_field .f_link{
+    color: #444;
+}
+.content_holder .group_field .f_link:hover,
+.content_holder .group_field .f_link:focus{
+    color: #000;
+}
+.content_holder .group_field p{
+    padding: 10px;
+}
+/* -------------------ForgetPassword Page Style-------------- */
+.fg_box{
+    text-align: center;
+    padding: 50px 10px;
+}
+.forget_pass h2, .forget_pass label, .forget_pass input, .forget_pass button{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.forget_pass input{
+    margin-bottom: 10px;
+    width: 100%;
+    height: 50px;
+    float: left;
+    border: 1px solid transparent;
+    box-shadow: none;
+    outline: none;
+    text-shadow: none;
+    padding: 5px;
+    border-bottom-color: #444;
+}
+
+.forget_pass input:focus,
+.forget_pass input:hover{
+    background: #eee;
+    border-bottom:1px solid #444 ;
+}
+.forget_pass button{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #444;
+    text-transform: uppercase;
+    color: #fff;
+    transition: all ease-in-out 0.3s;
+}
+.forget_pass .row{
+    overflow: hidden;
+}
+/* -------Social Login Style------ */
+.social_login button{
+    background-color: #444 !important;
+    color: #fff !important;
+    width: 40% !important;
+    padding: 5px 10px !important;
+    box-shadow: none !important;
+    border: none !important;
+    font-weight: normal !important;
+    border-radius: 0px !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif !important;
+    transition: all ease-in-out 0.3s;
+}
+.social_login button div{
+    background: transparent !important;
+}
+
+.social_login button:hover{
+    background-color: #eee !important;
+    color: #444 !important;
+}
+
+/* Media Query for responsive for Auth */
+@media screen and (max-width: 480px) {
+    .content_holder {
+        padding: 20px;
+        width: 250px;
+    }
+    .login_page {
+        text-align: center;
+        padding: 30px;
+    }
+    .login_form{
+        font-size: 12px;
+    }
+    .content_holder .group_field input{
+        font-size: 12px;
+        float: none;
+        padding: 5px 5px 5px 0px;
+        height: 30px;
+        margin-bottom: 20px;
+    }
+    .content_holder .group_field button{
+        padding: 10px;
+    }
+    h2{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .social_login button {
+        width: 100% !important;
+        padding: 0px 5px !important;
+    }
+    .content_holder .group_field p{
+        font-size: 12px;
+    }
+    .forget_pass button{
+        padding: 10px;
+    }
+  }
